@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayoutU"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".activities.UltrasoundActivity">
+
+    <ImageView
+        android:id="@+id/imageView_ultrasound"
+        android:layout_width="384dp"
+        android:layout_height="387dp"
+        android:layout_marginStart="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_upload_ultrasound"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_upload_ultrasound"
+        android:layout_width="wrap_content"
+        android:layout_height="59dp"
+        android:minWidth="373dp"
+        android:text="Upload ultrasound"
+        android:textAllCaps="false"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_ultrasound" />
+
+    <Button
+        android:id="@+id/button_make_prediction_ultrasound"
+        android:layout_width="wrap_content"
+        android:layout_height="59dp"
+        android:minWidth="373dp"
+        android:text="Make prediction"
+        android:textAllCaps="false"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_upload_ultrasound" />
+
+    <TextView
+        android:id="@+id/result_ultrasound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textAllCaps="false"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_make_prediction_ultrasound" />
+
+    <Button
+        android:id="@+id/button_get_mask_ultrasound"
+        android:layout_width="wrap_content"
+        android:layout_height="59dp"
+        android:layout_marginTop="32dp"
+        android:minWidth="373dp"
+        android:text="View segmentation mask"
+        android:textAllCaps="false"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result_ultrasound" />
+
+    <Button
+        android:id="@+id/button_reset_ultrasound"
+        android:layout_width="wrap_content"
+        android:layout_height="59dp"
+        android:layout_marginTop="48dp"
+        android:minWidth="373dp"
+        android:text="Upload new ultrasound"
+        android:textAllCaps="false"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_get_mask_ultrasound" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_ultrasound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
